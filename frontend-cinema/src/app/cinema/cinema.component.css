@@ -1,0 +1,65 @@
+.clickable{
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.nav-pills .nav-item:hover .nav-link {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.nav-pills .nav-item:hover .nav-link.active {
+  background-color: #007bff; /* couleur au survol lorsque l'onglet est actif */
+  color: #fff;
+}
+
+.panel {
+  margin-top: 10px;
+}
+
+.panel:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ajout de l'ombre au survol */
+}
+.btn-custom {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.2rem 0.4rem; /* Taille plus petite */
+  font-size: 0.75rem; /* Taille plus petite */
+  cursor: pointer;
+  border-radius: 4px; /* Coins légèrement arrondis */
+  margin: 5px; /* Espacement entre les boutons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-custom:hover {
+  background-color: blue;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Espace entre les boutons */
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-custom {
+    font-size: 0.6rem; /* Plus petit pour les écrans de petite taille */
+    padding: 0.15rem 0.3rem;
+  }
+  .ticket{
+    margin: 5px;
+  }
+}
